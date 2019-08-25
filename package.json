@@ -10,6 +10,18 @@
     "jest": "^24.9.0"
   },
   "dependencies": {
+    "fast-memoize": "^2.5.1",
+    "normalizr": "^3.4.1",
     "ramda": "^0.26.1"
+  },
+  "scripts": {
+    "build": "yarn build:prod",
+    "build:dev": "webpack --config webpack.config.dev.js",
+    "build:prod": "webpack --config webpack.config.prod.js",
+    "build:watch": "yarn build:development --watch",
+    "jest": "NODE_ENV=test jest --config ./test/specConfig.json",
+    "start": "yarn build:watch",
+    "start:dev-server": "webpack-dev-server --config webpack.config.dev.js",
+    "test:watch": "yarn jest --watch --verbose false"
   }
 }

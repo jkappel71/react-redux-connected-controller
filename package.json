@@ -1,0 +1,15 @@
+{
+  "name": "react-redux-connected-controller",
+  "version": "1.0.0",
+  "description": "A controller implementation for react-redux that works with connected components and supports suspense.",
+  "main": "index.js",
+  "repository": "https://github.com/jkappel71/react-redux-connected-controller.git",
+  "author": "Jay Kappel <jay@comsite.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "ramda": "^0.26.1"
+  }
+}
